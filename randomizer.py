@@ -5,16 +5,9 @@ list_of_words=["seminar","command","company","sycamore","compass","bank","bindin
 
 def randomWord():
   word=random.choice(list_of_words)
-  splits=list(word)
-  spaces=len(splits)
-  # return word
-  # return splits
-  # return spaces
-  my_list = [ ]
-  while len(my_list) < len(spaces):
-    my_list.append('_')
-  return(my_list)
-    
-  makeList = (randomWord(word))
-  print(f"Ok I have picked a word it has {spaces} letters in it. Try to guess")
-  print(makeList)
+  lists=list(word)
+  spaces=len(lists)
+  print(f"I have picked a word, it has {spaces} letters, so try to guess.")
+  print("_ " * spaces)
+  return(word,list,spaces)
+
